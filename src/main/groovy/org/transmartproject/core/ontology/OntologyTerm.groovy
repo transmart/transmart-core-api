@@ -17,7 +17,7 @@ public interface OntologyTerm {
 
     /**
      * Returns the term key; this is a string starting with \\,
-     * followed by the the table code and the concept full name
+     * followed by the the table code and the term full name
      * @return \\<table code><full name>
      */
     String getKey()
