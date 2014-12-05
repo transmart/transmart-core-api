@@ -24,4 +24,14 @@ class Panel {
      * The items to be OR-ed together.
      */
     List<Item> items
+
+    /**
+     * Include only facts whose date is more recent than this.
+     */
+    DateSpecification dateFrom
+
+    /**
+     * Include only facts whose date is older than this.
+     */
+    DateSpecification dateTo
 }
