@@ -1,5 +1,6 @@
 package org.transmartproject.core.dataquery.highdim
 
+import org.transmartproject.core.IterableResult
 import org.transmartproject.core.dataquery.assay.Assay
 import org.transmartproject.core.dataquery.highdim.assayconstraints.AssayConstraint
 import org.transmartproject.core.exceptions.InvalidArgumentsException
@@ -55,4 +56,6 @@ public interface HighDimensionResource {
      * the constraint or the constraint name is invalid
      */
     AssayConstraint createAssayConstraint(Map<String, Object> params, String name)
+
+    IterableResult<String> biomarkersForDataset(Map args, String ontologyTerm)
 }

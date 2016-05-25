@@ -1,5 +1,6 @@
 package org.transmartproject.core.dataquery.highdim
 
+import org.transmartproject.core.IterableResult
 import org.transmartproject.core.dataquery.DataRow
 import org.transmartproject.core.dataquery.TabularResult
 import org.transmartproject.core.dataquery.highdim.assayconstraints.AssayConstraint
@@ -148,4 +149,6 @@ interface HighDimensionDataTypeResource<R extends DataRow<AssayColumn, ? /* depe
      * @return true iif the the platform and this data type match
      */
     boolean matchesPlatform(Platform platform)
+
+    IterableResult<String> retrieveBioMarkers(Collection<String> platforms)
 }
