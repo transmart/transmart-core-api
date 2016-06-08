@@ -150,5 +150,6 @@ interface HighDimensionDataTypeResource<R extends DataRow<AssayColumn, ? /* depe
      */
     boolean matchesPlatform(Platform platform)
 
+    IterableResult<String> retrieveBioMarkers(Map options, Collection<String> platforms)
     IterableResult<String> retrieveBioMarkers(Collection<String> platforms)
 }

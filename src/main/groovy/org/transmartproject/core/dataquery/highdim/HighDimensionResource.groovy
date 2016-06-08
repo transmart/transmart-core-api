@@ -57,5 +57,5 @@ public interface HighDimensionResource {
      */
     AssayConstraint createAssayConstraint(Map<String, Object> params, String name)
 
-    IterableResult<String> biomarkersForDataset(Map args, String ontologyTerm)
+    IterableResult<String> biomarkersForDataset(Map options, String ontologyTerm)
 }
