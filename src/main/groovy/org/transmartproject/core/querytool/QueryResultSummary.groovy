@@ -1,15 +1,11 @@
 package org.transmartproject.core.querytool
 
-import org.transmartproject.core.dataquery.Patient
 import org.transmartproject.core.users.ProtectedResource
 
 /**
- * A query result instance contains information about a specific run of a
- * query.
- *
- * All query results are assumed to be of PATIENTSET type.
+ * Created by ewelina on 30-8-16.
  */
-interface QueryResult extends ProtectedResource {
+interface QueryResultSummary extends ProtectedResource {
 
     /**
      * The query result instance id.
@@ -48,11 +44,4 @@ interface QueryResult extends ProtectedResource {
      * this query
      */
     public String getUsername()
-    /**
-     * The set of patients included in this result.
-     *
-     * @return the set of patients
-     */
-    public Set<Patient> getPatients()
-
 }
